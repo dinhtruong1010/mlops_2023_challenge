@@ -56,16 +56,16 @@ def create_prob_config(phase_id: str, prob_id: str) -> ProblemConfig:
     #     AppPath.RAW_DATA_DIR / f"{phase_id}" / f"{prob_id}" / "raw_train.parquet"
     # )
     prob_config.raw_data_path = (
-        "/Volumes/DATA/Works/mlopsvn/mlops-mara-sample-public-main/data/raw_data/" + f"{phase_id}" + "/" + f"{prob_id}" + "/raw_train.parquet"
+        "../data/raw_data/" + f"{phase_id}" + "/" + f"{prob_id}" + "/raw_train.parquet"
     )
     prob_config.feature_config_path = (
-        "/Volumes/DATA/Works/mlopsvn/mlops-mara-sample-public-main/data/raw_data/" + f"{phase_id}" + "/" + f"{prob_id}" + "/features_config.json"
+        "../data/raw_data/" + f"{phase_id}" + "/" + f"{prob_id}" + "/features_config.json"
     )
     prob_config.train_data_path = AppPath.TRAIN_DATA_DIR / f"{phase_id}" / f"{prob_id}"
     prob_config.train_data_path.mkdir(parents=True, exist_ok=True)
 
     prob_config.category_index_path = (
-        "/Volumes/DATA/Works/mlopsvn/mlops-mara-sample-public-main/data/train_data/" + f"{phase_id}" + "/" + f"{prob_id}" + "/category_index.pickle"
+        "../data/train_data/" + f"{phase_id}" + "/" + f"{prob_id}" + "/category_index.pickle"
     )
     prob_config.train_x_path = prob_config.train_data_path / "train_x.parquet"
     prob_config.train_y_path = prob_config.train_data_path / "train_y.parquet"
