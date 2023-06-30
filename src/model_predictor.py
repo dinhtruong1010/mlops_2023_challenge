@@ -77,9 +77,9 @@ class ModelPredictor:
             category_index=self.category_index,
         )
         # save request data for improving models
-        ModelPredictor.save_request_data(
-            raw_df, self.prob_config.captured_data_dir, data.id
-        )
+        # ModelPredictor.save_request_data(
+        #     raw_df, self.prob_config.captured_data_dir, data.id
+        # )
         try:
             feature_df.drop(['is_drift', 'batch_id'], axis=1,inplace=True)
         except:
