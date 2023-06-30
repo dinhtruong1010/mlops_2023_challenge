@@ -93,8 +93,8 @@ class ModelPredictor:
         return output_file_path
 
 
-default_config_path = "/Volumes/DATA/Works/mlopsvn/mlops-mara-sample-public-main/data/model_config/phase-1/prob-1/model-1.yaml"
-default_config_path2 = "/Volumes/DATA/Works/mlopsvn/mlops-mara-sample-public-main/data/model_config/phase-1/prob-2/model-1.yaml"
+default_config_path = "../data/model_config/phase-1/prob-1/model-1.yaml"
+default_config_path2 = "../data/model_config/phase-1/prob-2/model-1.yaml"
 # default_config_path = (
 #     ".." + AppPath.MODEL_CONFIG_DIR
 #     / ProblemConst.PHASE1
