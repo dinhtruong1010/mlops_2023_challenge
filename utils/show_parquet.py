@@ -7,7 +7,7 @@ import argparse
 #     df = pd.read_parquet(path=path)
 #     print(df)
 
-def show_folder_parquet():
+def show_folder_parquet(args):
     path = input("path:")
     file_list = []
     if path.endswith(".parquet"):
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", type=str, default="input")
     args = parser.parse_args()
-    show_folder_parquet()
+    show_folder_parquet(args)
     exit()
     if len(sys.argv) >= 2:
         show_parquet(sys.argv[1])
