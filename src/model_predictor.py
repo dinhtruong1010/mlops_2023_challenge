@@ -11,7 +11,7 @@ import yaml
 from fastapi import FastAPI, Request, BackgroundTasks
 from pandas.util import hash_pandas_object
 from pydantic import BaseModel
-import cv2
+# import cv2
 import json
 from problem_config import ProblemConst, create_prob_config
 from raw_data_processor import RawDataProcessor
